@@ -1,0 +1,89 @@
+\documentclass[man,12pt]{apa7}
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{pdflscape}
+\usepackage{comment}
+
+% Bibliography setup for APA style
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{mahbod.bib}
+\DeclareLanguageMapping{american}{american-apa}
+
+% Additional useful packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{
+    left=1in,
+    right=1in,
+    top=1in,
+    bottom=1in
+}
+\usepackage{setspace}
+\doublespacing
+
+% Title and Authors
+\title{Localizing Structure in Individual Differences: A Visual Illusion Case Study}
+\shorttitle{Individual Differences in Illusions}
+\author{Mahbod Mehrvarz, Hrithik Popat, Jeffrey N. Rouder}
+\affiliation{University of California, Irvine}
+
+% Author Note
+\authornote{
+    \addORCIDlink{Mahbod Mehrvarz}{0009-0002-5426-5867} \\
+    \addORCIDlink{Jeffrey N. Rouder}{0000-0003-2023-3891} \\
+
+    Correspondence concerning this article should be addressed to Mahbod Mehrvarz, Department of Cognitive Sciences, University of California, Irvine, CA 92697. Email: \href{mailto:mehrvarm@uci.edu}{mehrvarm@uci.edu} \\
+
+    Data, analysis scripts, and code used to generate the figures are available at: \href{https://github.com/specl/ind-illusions}{https://github.com/specl/ind-illusions} \\
+
+    This research was approved by the UCI Institutional Review Board (IRB \#3292) and supported in part by NSF Grant 2126976 and ONR Grant N00014-23-1-2792.
+}
+
+
+\abstract{ 
+    \input{abstract}
+    }
+
+
+\keywords{Individual Differences, Visual Illusions, Factor Analysis, Hierarchical Models, Reliability}
+
+\begin{document}
+
+\maketitle
+
+\input{intro}
+
+\section*{Methods}
+
+\input{methods}
+
+\section*{Results}
+
+\input{results}
+
+\section*{Discussion}
+
+\input{discussion}
+
+
+\printbibliography
+
+\newpage
+
+\input{figs-caps}
+\input{tables}
+
+\newpage
+
+
+\section*{Declarations}
+
+\input{declarations}
+
+\end{document}
