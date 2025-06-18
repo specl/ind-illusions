@@ -1,31 +1,41 @@
-# Individual Differences in Visual Illusions
+# ind-illusions
 
-This repository contains all data, analysis code, figures, and manuscript files for the project:
+This repository contains all the necessary data, scripts, and materials for the paper:
 
 **Mehrvarz, M., Popat, H., & Rouder, J. N. (2024).**  
 *Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases.*
 
----
+## Repository Structure
+- `/_data`: Raw and formatted data  
+- `/_data-processing`: Scripts for wrangling and formatting data  
+- `/_figs`: Final figure outputs  
+- `/_make-figs`: Scripts to generate figures  
+- `/_make-tab`: Scripts to generate manuscript tables  
+- `/_manuscript-latex`: LaTeX source for the manuscript  
+- `/_media`: Supplemental media files (e.g., images, assets)  
+- `/_results`: Output from model estimation (large files excluded)  
+- `/_script`: Core analysis and model-running scripts  
+- `manuscript.pdf`: Compiled version of the paper  
+- `README`: This file
 
-## Project Structure
+## How to Reproduce
 
-- `_data/` — Raw and formatted data  
-- `_data-processing/` — Scripts for data wrangling  
-- `_figs/` — Final figure outputs  
-- `_make-figs/` — Scripts to generate figures  
-- `_make-tab/` — Scripts to generate tables  
-- `_manuscript-latex/` — LaTeX manuscript files  
-- `_media/` — Supplemental media (e.g., images, videos)  
-- `_results/` — Model output files (excluded if over 100MB)  
-- `_script/` — Core analysis scripts  
-- `manuscript.pdf` — Final compiled paper (for reference)  
-- `README` — This file  
+To regenerate key outputs (figures/tables), use the scripts in `_make-figs` and `_make-tab`; Or regenerate model output `_script`
+For example:
 
----
+```r
+source("_make-figs/fig_efhbm.R")
+source("_script/bhfm-mod.R")
+```
 
 ## Citation
+To cite this work:
+```bibtex
+@article{MehrvarzPopatRouder2024,
+  title={Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases},
+  author={Mehrvarz, M. and Popat, H. and Rouder, J. N.},
+  year={2024}
+}
+```
 
-If you use or refer to this work, please cite:
-
-> Mehrvarz, M., Popat, H., & Rouder, J. N. (2024). *Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases.*
 
