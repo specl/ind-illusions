@@ -24,7 +24,7 @@ To regenerate key outputs (figures/tables), use the scripts in `_make-figs` and 
 For example:
 
 ```r
-source("_make-figs/fig_efhbm.R")
+source("_make-figs/effect-plot.R")
 source("_script/bhfm-mod.R")
 ```
 
