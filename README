@@ -9,17 +9,17 @@ This repository contains all data, analysis code, figures, and manuscript files 
 
 ## Project Structure
 
-- `_data/` — Raw and formatted data
-- `_data-processing/` — Scripts for data wrangling
-- `_figs/` — Final figure outputs
-- `_make-figs/` — Scripts to generate figures
-- `_make-tab/` — Scripts to generate tables
-- `_manuscript-latex/` — LaTeX manuscript files
-- `_media/` — Supplemental media (e.g., images, videos)
-- `_results/` — Model output files (excluded if over 100MB)
-- `_script/` — Core analysis scripts
-- `manuscript.pdf` — Final compiled paper (for reference)
-- `README` — This file
+- `_data/` — Raw and formatted data  
+- `_data-processing/` — Scripts for data wrangling  
+- `_figs/` — Final figure outputs  
+- `_make-figs/` — Scripts to generate figures  
+- `_make-tab/` — Scripts to generate tables  
+- `_manuscript-latex/` — LaTeX manuscript files  
+- `_media/` — Supplemental media (e.g., images, videos)  
+- `_results/` — Model output files (excluded if over 100MB)  
+- `_script/` — Core analysis scripts  
+- `manuscript.pdf` — Final compiled paper (for reference)  
+- `README` — This file  
 
 ---
 
