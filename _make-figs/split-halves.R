@@ -99,7 +99,7 @@ plotHalves = function(tscores, task_name, y_labs, x_labs, top = 0){
          line = -.05)
   }
   text_expression = bquote(italic(r) == .(cor.val[1, 2]))
-  text(-2, 4, text_expression, cex = 2)
+  text(-2, 4, text_expression, cex = 1)
   
   points(tscores, col = col1, pch = 16, cex = .8)
   lines(c(-4.1,4.1), c(-4.1,4.1), col = col2, lwd = 1.5, lty = 5)
