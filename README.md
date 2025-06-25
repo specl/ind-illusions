@@ -3,7 +3,7 @@
 This repository contains all the necessary data, scripts, and materials for the paper:
 
 **Mehrvarz, M., Popat, H., & Rouder, J. N. (2024).**  
-*Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases.*
+*Localizing Structure in Individual Differences: A Visual Illusion Case Study.*
 
 ## Repository Structure
 - `/_data`: Raw and formatted data  
@@ -31,10 +31,11 @@ source("_script/bhfm-mod.R")
 ## Citation
 To cite this work:
 ```bibtex
-@article{MehrvarzPopatRouder2024,
+@article{mehrvarz2024individual,
   title={Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases},
-  author={Mehrvarz, M. and Popat, H. and Rouder, J. N.},
-  year={2024}
+  author={Mehrvarz, Mahbod and Popat, Hrithik and Rouder, Jeffrey N},
+  year={2024},
+  publisher={OSF}
 }
 ```
 ## Preprint
