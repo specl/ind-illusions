@@ -14,7 +14,8 @@ This repository contains all the necessary data, scripts, and materials for the 
 - `/_manuscript-latex`: LaTeX source for the manuscript  
 - `/_media`: Supplemental media files (e.g., images, assets)  
 - `/_results`: Output from model estimation (large files excluded)  
-- `/_script`: Core analysis and model-running scripts  
+- `/_script`: Core analysis and model-running scripts
+- `/_tutorial`: Step-by-step tutorial to reproduce the paper’s hierarchical Bayesian modeling
 - `manuscript.pdf`: Compiled version of the paper  
 - `README`: This file
 
@@ -39,6 +40,7 @@ To cite this work:
 ## Preprint
 
 The preprint of the paper can be found [here](https://osf.io/preprints/psyarxiv/6z92y_v1).
+
 
 
 
