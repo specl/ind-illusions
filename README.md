@@ -31,15 +31,14 @@ source("_script/bhfm-mod.R")
 ## Citation
 To cite this work:
 ```bibtex
-@article{mehrvarz2024individual,
-  title={Individual Differences in Visual Illusions: Graphical and Analytic Approaches For Finding Structure in Real-World Cases},
-  author={Mehrvarz, Mahbod and Popat, Hrithik and Rouder, Jeffrey N},
-  year={2024},
-  publisher={OSF}
+@article{mehrvarzlocalizing,
+  title={Localizing Structure in Individual Differences: A Visual Illusion Case Study},
+  author={Mehrvarz, Mahbod and Popat, Hrithik and Rouder, Jeffrey N}
 }
 ```
 ## Preprint
 
 The preprint of the paper can be found [here](https://osf.io/preprints/psyarxiv/6z92y_v1).
+
 
 
