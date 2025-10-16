@@ -27,6 +27,6 @@
 - `zol` = Zoellner
 
 ## csv files
-- `../_data/raw-data.csv` — merged from GitHub, filtered to tasks, subjects relabeled, repeated sessions pruned
-- `../_data/processed-data.csv` — output of `makeDat()`: computes `y`, fixes `rt`, builds `trial` and `block`
-- `../_data/clean_data.csv` — analysis-ready after quality control: removes fast RTs and flagged outliers; leverage diagnostics inspected
+- `raw-data.csv` — merged from GitHub, filtered to tasks, subjects relabeled, repeated sessions pruned
+- `processed-data.csv` — output of `makeDat()`: computes `y`, fixes `rt`, builds `trial` and `block`
+- `clean_data.csv` — analysis-ready after quality control: removes fast RTs and flagged outliers; leverage diagnostics inspected
