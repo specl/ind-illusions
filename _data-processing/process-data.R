@@ -4,23 +4,8 @@ makeDat = function(){
   # Reading CSV:
   all_data = read.csv("../_data/raw-data.csv")
   
-  # Combining Data
-  all_data = do.call(rbind, out_list)
-  
-  # Getting rid of repeat participants
-  repeat_pid = names(which(table(all_data$pid)>150))
-  
-  tdat = all_data[all_data$pid == repeat_pid,]
-  sid_rep = unique(tdat$sid)
-  bad_sid = sid_rep[2]
-  all_data = all_data[!all_data$sid==bad_sid,]
-  
-  # Adding Subject Numbers 
-  all_data$sub = as.numeric(factor(all_data$pid))
-  
   # Adding Trial Numbers
   all_data$trial = rep(rep(1:15, 5*2), max(all_data$sub))
-  
   
   # Creating Scores for each task
   all_data$y = NA

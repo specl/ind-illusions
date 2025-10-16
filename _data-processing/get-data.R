@@ -51,6 +51,22 @@ mergeData = function(){
   
   # Combining Data and Saving Data:
   raw_data = do.call(rbind, out_list)
+  
+  # Getting rid of repeat participants
+  repeat_pid = names(which(table(raw_data$pid)>150))
+  
+  tdat = raw_data[raw_data$pid == repeat_pid,]
+  sid_rep = unique(tdat$sid)
+  bad_sid = sid_rep[2]
+  raw_data = raw_data[!raw_data$sid==bad_sid,]
+  
+  # Adding Subject Numbers 
+  raw_data$sub = as.numeric(factor(raw_data$pid))
+  
+  ind = which("pid" %in% colnames(raw_data))
+  
+  raw_data = raw_data[,-ind]
+  
   write.csv(raw_data,"../_data/raw-data.csv")
 }
 mergeData()
