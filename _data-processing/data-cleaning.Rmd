@@ -592,7 +592,7 @@ scores1 = tapply(dat4$y, list(dat4$S, dat4$JV), mean)
 scores_cor = round(cor(scores1),2)
 rownames(scores_cor) = colnames(scores_cor) = new_names
 plotCor(scores_cor)
-title("Bad Partip", line = 3)
+title("Cleaned Data", line = 3)
 
 dat = read.csv("../_data/processed-data.csv")
 dat$S = as.numeric(factor(dat$sub))
@@ -611,7 +611,8 @@ title("All Partip", line = 3)
 # Saving clean data
 
 ```{r}
-clean_data = dat4[ , c("sub", setdiff(names(dat4), "sub"))]
+clean_data = dat4[ , c(setdiff(names(dat4), "X"))]
+clean_data = clean_data[ , c("sub", setdiff(names(clean_data), "sub"))]
 
-write.csv(dat4, "../_data/clean_data.csv", row.names = FALSE)
+write.csv(clean_data, "../_data/clean_data.csv", row.names = FALSE)
 ```
